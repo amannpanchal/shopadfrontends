@@ -1,13 +1,194 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  padding : 0;
+  margin : 0;
+  box-sizing:  border-box;
+   font-family: "Montserrat", sans-serif;
+    font-weight: 0500;
+    font-style: normal;
+}
+body 
+{
+  background-color: var(--body-background);
+  width : 100vw;
+  overflow-X : hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rightSide {
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  /* border : 3px solid green; */
+
+}
+
+.leftSide {
+  flex-direction: column;
+  /* border : 1px solid green; */
+  height: 100vh;
+  overflow-y: scroll;
+}
+#heroSection,#priceSection,#SiteFloorSection,#amenitiesSection,#gallerySection,#locationSection,#virtualSiteSection{
+}
+
+.leftSide::-webkit-scrollbar {
+  display: none;
+}
+
+.leftSide {
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+ 
+}
+.container{
+padding : 20px;
+background-color: white;
+margin : 10px;
+
+
+}
+.heading {
+  margin : 10px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body,
+html,
+#root,
+.appContainer {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.appContainer {
+  display: flex;
+  height: 100%;
+}
+
+.leftSideContainer {
+  width: 70vw;
+  overflow-y: auto;
+}
+
+.rightSideContainer {
+  width: 30vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .rightSideContainer {
+    display: none;
+  }
+
+  .leftSideContainer {
+    width: 100vw;
+  }
+}
+.slick-dots .slick-dots-bottom li {
+  background-color: black !important;
+  
+
+}
+.ant-carousel .slick-dots li button{
+  background-color: black !important;
+  border : 2px solid var(--heading-color)!important;
+}
+
+.ant-modal-content,
+    .ant-modal-content{
+  padding  :0!important;
+  overflow : hidden;
+  margin : 0!important;
+
+}
+.ant-picker-now-btn ,.ant-picker-cell ant-picker-cell-in-view ant-picker-cell-today{
+color :var(--heading-color) !important;
+}
+.ant-btn ,ant-picker-cell-inner,.ant-picker-cell .ant-picker-cell-hover ,.ant-picker-cell-selected ant-picker-cell-inner {
+  background-color: var(--heading-color)!important;
+  color : white;
+
+}
+.ant-modal-close{
+  color : white!important;
+}
+.ant-btn-disabled:hover{
+  background-color: var(--heading-color)!important;
+  border : none!important;
+}
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+background-color: var(--heading-color) !important;
+  border: none !important;
+  color : white!important;
+}
+.ant-dropdown-menu-item-selected{
+background-color : var(--heading-color)!important;
+color : white!important;
+display : flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* src/AnimatedButton.css */
+
+.animated-button {
+  background: linear-gradient(270deg, #ff6b6b, #556270);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 1700px) and (min-width: 600px) {
+.ant-modal-content {
+    width: 600px !important;
+  }
 }

@@ -1,0 +1,40 @@
+.gradient-button {
+
+    background: linear-gradient(90deg, var(--button-hover-onHover-background-color-one), var(--button-hover-onHover-background-color-two));
+        background-size: 200% 200%;
+        border: none;
+        color: var(--button-hover-onHover-background-color-one);
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        transition: background-position 0.5s ease;
+        width : 100%;
+        animation: gradientAnimation 1s ease infinite;
+        border-radius : 3px;
+}
+/* 
+.gradient-button.hovered {
+    background: linear-gradient(90deg, var(--button-hover-onHover-background-color-one), var(--button-hover-onHover-background-color-two));
+    background-size: 200% 200%;
+    border: none;
+    color: var(--button-hover-onHover-background-color-one);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: background-position 0.5s ease;
+} */
+ @keyframes gradientAnimation {
+     0% {
+         background-position: 0% 50%;
+     }
+
+     50% {
+         background-position: 100% 50%;
+     }
+
+     100% {
+         background-position: 0% 50%;
+     }
+ }

@@ -1,0 +1,251 @@
+.SimpleFormSmall {
+    background-color: white;
+}
+
+.SimpleFormBig {
+    position: absolute;
+    left: 10px;
+    width: 350px;
+    background-color: white;
+    top: 70px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.SimpleFormSmallHeading {
+    background-color: rgba(2, 43, 45);
+    color: white;
+    text-align: center;
+    padding: 2px;
+    margin: 10px 0;
+}
+
+.SimpleFormBigHeading {
+    color: rgba(2, 43, 45);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.SimpleFormBigMainHeading {
+    background-color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.SimpleFormSmallMainHeading {
+    background-color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.SimpleFormSmallMainHeading h1,
+.SimpleFormBigMainHeading h1 {
+    color: rgba(2, 43, 45);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.SimpleFormBigAddress,
+.SimpleFormSmallAdress {
+    text-align: center;
+    font-size: 18px;
+}
+
+.SimpleFormBigLandArea,
+.SimpleFormSmallLandArea {
+    background-color: rgba(232, 232, 232);
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: right;
+}
+
+.SimpleFormBigLandAreaHeading,
+.SimpleFormSmallLandAreaHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.SimpleFormBigLandAreaHeading p,
+.SimpleFormSmallLandAreaHeading p {
+    width: 50%;
+    text-align: right;
+    
+    padding-right: 5%;
+}
+
+.SimpleFormBigLandAreaHeading h4,
+.SimpleFormSmallLandAreaHeading h4 {
+    display: flex;
+
+    align-items: center;
+    width: 50%;
+   
+    text-align: left!important;
+
+}
+
+
+.SimpleFormBigDescription,
+.SimpleFormSmallDescription {
+    margin: 10px;
+}
+
+.SimpleFormBigDescription p,
+.SimpleFormSmallDescription p {
+
+    text-align: center;
+    margin: 12px;
+  
+}
+
+.SimpleFormBigDescription h1,
+.SimpleFormSmallDescription h1 {
+    text-align: center;
+    color: rgba(2, 43, 45);
+    margin: 14px 0;
+    fontSize: 29px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1150px) {
+    .SimpleFormBig {
+
+        left: 10px;
+        top: 70px;
+        padding: 5px;
+        width: 300px;
+        /* height : 300px; */
+    }
+        .SimpleFormBigDescription h1,
+        .SimpleFormSmallDescription h1 {
+            textAlign: center;
+            color: rgba(2, 43, 45);
+            margin: 12px 0;
+            fontSize: 26px;
+        }
+
+    SimpleFormBigDescription p,
+    .SimpleFormSmallDescription p {
+
+        textAlign: center;
+        margin: 10px;
+    }
+
+
+    .SimpleFormBigDescription {
+        margin: 8px;
+    }
+
+    .SimpleFormBigHeading {
+        font-size: 12px;
+    }
+
+    .SimpleFormBigMainHeading h1 {
+        font-size: 26px;
+    }
+
+    .SimpleFormBigAddress,
+    .SimpleFormSmallAdress {
+        font-size: 14px;
+    }
+
+    .SimpleFormBigLandArea,
+    .SimpleFormSmallLandArea {
+        padding: 5px 0;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .SimpleFormBig {
+
+        left: 0;
+        top: 70px;
+        padding: 5px;
+       
+    }
+
+    .SimpleFormBigHeading {
+        font-size: 16px;
+    }
+
+    .SimpleFormBigMainHeading h1 {
+        font-size: 20px;
+    }
+
+    .SimpleFormBigAddress,
+    .SimpleFormSmallAdress {
+        font-size: 16px;
+    }
+
+    .SimpleFormBigLandArea,
+    .SimpleFormSmallLandArea {
+        padding: 5px 0;
+    }
+}
+
+.SimpleFormBigBackground,
+.SimpleFormSmallBackground {
+    background: linear-gradient(9deg, rgb(29, 49, 29), rgb(255, 200, 76));
+    color: white;
+    padding: 10px 0;
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+
+@media (max-width: 1000px) {
+    .SimpleFormBig {
+        left: 0;
+        top: 70px;
+        padding: 5px;
+    }
+
+    .SimpleFormBigHeading {
+        font-size: 16px;
+    }
+
+    .SimpleFormBigMainHeading h1 {
+        font-size: 20px;
+    }
+
+    .SimpleFormBigAddress,
+    .SimpleFormSmallAdress {
+        font-size: 16px;
+    }
+
+    .SimpleFormBigLandArea,
+    .SimpleFormSmallLandArea {
+        padding: 5px 0;
+    }
+
+    .SimpleFormBigBackground {
+        font-size: 11px;
+        padding: 9px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .SimpleFormBigBackground {
+        font-size: 10px;
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .SimpleFormBigBackground {
+        font-size: 9px;
+        padding: 7px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .SimpleFormBigBackground {
+        font-size: 8px;
+        padding: 6px 0;
+    }
+}

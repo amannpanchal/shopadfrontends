@@ -1,0 +1,1 @@
+export const backendUrl = "https://landingpagebackend-ben2.onrender.com";

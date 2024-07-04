@@ -1,0 +1,10 @@
+@import url('../../../config/colors.css');
+
+.heading{
+    border-left : 9px solid var(--heading-color);
+    
+    padding : 10px 14px;
+    width : fit-content;
+    /* border-radius :25px; */
+    color : var(--heading-color);
+}

@@ -1,0 +1,55 @@
+@import url('../../../config/colors.css');
+
+.videoView {
+border : "1px solid blue";
+width :100%;
+/* overflow : hidden; */
+height :300px;
+border : 4px solid var(--video-border);
+color : white;
+display : flex;
+justify-content: center;
+align-items: center;
+position : relative;
+
+}
+.videoCenter{
+    width : 100%;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+    
+}
+.topSideHeading{
+    position : absolute;
+    top : 15px;
+    left : 0;
+    width : 160px;
+    background-color: var(--top-side-heading-background);
+    text-align: right;
+    padding-right : 3px;
+    font-size: 14px;
+    color : var(--top-side-heading-color);
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+.videoCenter:hover {
+    transform: scale(1.03);
+        transition: transform 0.3s ease;
+}
+
+.bottomSideHeading{
+    position : absolute;
+    right : 0;
+    bottom : 20px;
+    max-width :200px;
+    background-color: var(--bottom-side-heading-background);
+    padding-left : 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    
+
+}

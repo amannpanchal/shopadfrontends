@@ -1,0 +1,39 @@
+
+ .gradient-button2 {
+
+    border : 2px solid var(--button-hover-onHover-background-color-one);
+    padding: 10px ;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius : 4px;
+        width :100%;
+
+ 
+ }
+
+ .gradient-button2.hovered {
+    background: linear-gradient(90deg, var(--button-hover-onHover-background-color-one), var(--button-hover-onHover-background-color-two));
+        background-size: 200% 200%;
+    border: 2px solid white;
+        color: var(--button-hover-onHover-background-color-one);
+    width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 10px;
+        color: white;
+        transition: background-position 0.5s ease;
+        animation: gradientAnimation 1s ease infinite;
+ }
+  @keyframes gradientAnimation {
+      0% {
+          background-position: 0% 50%;
+      }
+
+      50% {
+          background-position: 100% 50%;
+      }
+
+      100% {
+          background-position: 0% 50%;
+      }
+  }

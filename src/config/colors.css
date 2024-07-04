@@ -1,0 +1,20 @@
+:root {
+    --heading-color: rgba(2,43,45);
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --video-border : gray;
+    --top-side-heading-background  : green;
+    --top-side-heading-color : rgb(85, 85, 60);
+    --bottom-side-heading-background : rgb(185, 184, 184);
+    --bottom-side-heading-color : rgb(185, 184, 184);
+    --button-hover-font-color : rgb(29, 49, 29);
+    --button-hover-onHover-background-color-one : rgb(29, 49, 29);
+    --button-hover-onHover-background-color-two : rgb(155, 132, 17);
+    --button-hover-onHover-text-color : rgb(29, 49, 29);
+    --body-background  : rgba(219,228,233);
+    
+}
+.videoCenter{
+    background-color: rgba(0, 0, 0, 0.293);
+
+}
