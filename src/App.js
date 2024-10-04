@@ -1,80 +1,26 @@
-import React, { useState, useEffect } from "react";
-import { Col, Row } from "antd";
-import SideForm from "./components/Sides/RightSide/SideForm";
-import LeftSide from "./components/Sides/LeftSide/LeftSide";
-import Loader from "./components/component/Loader/Loader";
+import React, { useEffect } from 'react'
+import AllTypesOfRoutes from './routes/AllTypesOfRoutes'
+import { adminProfile } from './api/auth'
+
 
 const App = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [imagesLoading, setImagesLoading] = useState(true); // State for tracking image loading
+  const adminData = async () => {
 
+    const response = await adminProfile();
+    localStorage.setItem("admindata", JSON.stringify(response));
+    localStorage.setItem("adminid", response?._id);
+    
+    
+}
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 1150);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Call handler right away so state gets updated with initial window size
-    handleResize();
-
-    // Remove event listener on cleanup
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-    useEffect(() => {
-      const loadImage = () => {
-        
-        setTimeout(() => {
-          setImagesLoading(false); 
-        }, 2000);
-      };
-
-      loadImage();
-    }, []);
-
+    adminData();
+  },[])
   return (
-    <div
-      style={{
-        display: "flex",
-      }}
-    >
-      {imagesLoading ? (
-        <>
-          <Loader/>
-        </>
-      ) : (
-        <>
-          <div
-            style={
-              isSmallScreen
-                ? {
-                    width: "100vw",
-                  }
-                : {
-                    width: "77vw",
-                  }
-            }
-          >
-            <LeftSide />
-          </div>
-          {!isSmallScreen && (
-            <div
-              style={{
-                width: "23vw",
-                position: "sticky",
-                height: "100vh",
-                backgroundColor: "white",
-                top: "0",
-              }}
-            >
-              <SideForm />
-            </div>
-          )}
-        </>
-      )}
+    <div>
+    <AllTypesOfRoutes/>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
 
